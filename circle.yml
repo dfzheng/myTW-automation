@@ -9,4 +9,4 @@ jobs:
       - checkout
       - run:
          name: Java tests
-         command: mvn clean run
+         command: mvn clean test
