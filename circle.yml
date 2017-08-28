@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/openjdk:latest
+      - image: selenium/standalone-chrome:latest
+      
+    steps:
+      - checkout
+      - run:
+         name: Java tests
+         command: mvn clean run
